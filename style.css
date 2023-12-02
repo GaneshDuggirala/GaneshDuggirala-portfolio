@@ -1,0 +1,873 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(13, 2, 22);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    position: relative  ;
+    top: 0;
+    z-index: 1;
+}
+div button{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid purple;
+    border-radius: 6px;
+}
+
+div button:hover{
+    color: black;
+    background-image: linear-gradient(transparent,rgb(188, 139, 234));
+}
+nav{
+    display:flex;
+    /* width: 115%; */
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+
+}
+.left{
+    font-size: 2.3rem;
+    text-shadow: 2px 2px black;
+    display: flex;
+    font-weight: 700;
+    padding-left: -2%;
+}
+
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-right:10px ;
+}
+.right li{
+    margin: 0px 48px 0px 10px;
+    cursor: pointer;
+}
+.right li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header code completed */
+
+
+.leftsection{
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 35px;
+}
+.detail{
+    font-size: 24px;
+}
+
+.rightsection{
+    width: 100%;
+    margin-right: 10%;
+}
+
+.rightsection img{
+    width: 100%;
+    margin-top: 40px;
+}
+.firstsection{
+    display: flex;
+    height: 550px;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(209, 177, 239);
+    margin: auto;
+    display: block;
+}
+.links:hover{
+    color: rgb(188, 139, 234);
+}
+
+.links:hover::after{
+    width: 100%;
+    transition: width 0.28s linear;
+}
+/* First section end */
+
+.secondsection h1{
+    margin: 20px 10px  20px 10px;
+    margin-left: 40px;
+}
+.box{
+    height: 300px;
+    width: 1px;
+    background-color: white;
+    margin: 30px 0px 50px 200px;
+}
+
+.first{
+    display: flex;
+}
+/* second section completed */
+
+.educationdetails{
+    margin: 20px;
+    margin-top: 20px;
+}
+.educationdetails ul li{
+    margin-top: 30px;
+}
+
+.box1{
+    height: 600px;
+    width: 1px;
+    background-color: white;
+    margin: 30px 0px 50px 200px;
+}
+
+.thirdsection h1{
+    margin: 20px 10px 20px 10px;
+    margin-left: 40px;
+}
+
+/* third section completed */
+.fourthsection h1{
+    margin: 20px 10px 100px 10px;
+    margin-left: 40px;
+}
+.allprojects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prjs{
+    display: flex;
+    /* flex-direction: row */
+    width:31.5%;
+    height: 7%;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding:0 3% 0 3%;
+    height: 250px;
+    text-align: center;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+    background: linear-gradient(transparent,rgb(16, 15, 18));
+    border-radius: 10px;
+    border: 0.2px solid rgb(195, 145, 241);;
+}
+
+.weblink a{
+    text-decoration: none;
+    /* padding: 25px; */
+    text-align: left;
+    color: rgb(195, 145, 241);
+    cursor: pointer;
+}
+
+.weblink{
+    height: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+.prjs div p{
+    margin: 12px;
+}
+.prjs div h2{
+
+    color: rgb(195, 145, 241);
+    margin-bottom: 20px;
+}
+
+
+/* project section completed */
+
+footer{
+    background-image: linear-gradient(transparent,black);
+    width: 100%;
+    height: 100%vh;
+}
+.container-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.inp{
+    width: 220%;
+    height: 45px;
+    margin: 30px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.textareas{
+    width: 220%;
+    height:60px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.send{
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* 850px to 1200 px Screen width*/
+
+@media screen and (max-width: 1200px) and (min-width: 850px) {
+    
+    header{
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    div button{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+        background-color: transparent;
+        border: 1px solid purple;
+        border-radius: 6px;
+    }
+    
+    div button:hover{
+        color: black;
+        background-image: linear-gradient(transparent,rgb(188, 139, 234));
+    }
+    nav{
+        display:flex;
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left{
+        font-size: 2.3rem;
+        text-shadow: 2px 2px black;
+        display: flex;
+        font-weight: 700;
+    }
+    
+    .right{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    .right li{
+        margin: 0px 35px 0px 10px;
+         cursor: pointer;
+    }
+    .right li a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    /* Header code completed */
+
+
+    .leftsection{
+        width: 100%;
+        text-align: left;
+        padding-left: 8%;
+    }
+    .detail{
+        font-size: 25px;
+    }
+
+    .rightsection{
+        width: 100%;
+        margin-right: 40px;
+        margin-top: 2%;
+        padding-right: 8%;
+    }
+
+    .rightsection img{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .firstsection{
+        display: flex;
+        height: 550px;
+        justify-content:space-around;
+        align-items: center;
+        margin-top: -4%;
+    }
+
+    .links::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: rgb(209, 177, 239);
+        margin: auto;
+        display: block;
+    }
+    .links:hover{
+        color: rgb(188, 139, 234);
+    }
+
+    .links:hover::after{
+        width: 100%;
+        transition: width 0.28s linear;
+    }
+    /* First section end */
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* 650px to 850 px Screen width*/
+
+@media screen and (max-width: 850px) and (min-width: 650px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    div button{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+        background-color: transparent;
+        border: 1px solid purple;
+        border-radius: 6px;
+    }
+    
+    div button:hover{
+        color: black;
+        background-image: linear-gradient(transparent,rgb(188, 139, 234));
+    }
+    nav{
+        display:flex;
+        margin-top: 10px;
+        width: 100%;
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left{
+        font-size: 2.1rem;
+        text-shadow: 2px 2px black;
+        display: flex;
+        font-weight: 700;
+    }
+    
+    .right{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    .right li{
+        margin-right: -15px;
+        cursor: pointer;
+    }
+    .right li a{
+        margin: 0px 0px 0px 38px;
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+
+  /* Header code completed */
+
+
+
+
+
+    .leftsection{
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        margin-left: 3%;
+    }
+    .detail{
+        font-size: 25px;
+    }
+
+    .rightsection{
+        width: 100%;
+        margin-right: 30px;
+        margin-right: 3%;
+    }
+
+    .rightsection img{
+        width: 106%;
+        margin-top: 40px;
+    }
+
+    .firstsection{
+        display: flex;
+        height: 550px;
+        justify-content:space-around;
+        align-items: center;
+        margin-top: -5%;
+    }
+
+    .links::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: rgb(209, 177, 239);
+        margin: auto;
+        display: block;
+    }
+    .links:hover{
+        color: rgb(188, 139, 234);
+    }
+
+    .links:hover::after{
+        width: 100%;
+        transition: width 0.28s linear;
+    }
+    /* First section end */
+
+    .box{
+        height: 300px;
+        width: 1px;
+        background-color: white;
+        margin: 30px 0px 50px 100px;
+    }
+    .secondhr{
+        width: 115%;
+        overflow-x: hidden;
+    }
+
+    /* second section end */
+
+    .box1{
+        height: 600px;
+        width: 1px;
+        background-color: white;
+        margin: 30px 0px 50px 100px;
+    }
+
+    /* third section end */
+
+
+    .fourthsection h1{
+        margin: 20px 10px 100px 10px;
+        margin-left: 40px;
+    }
+    .allprojects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .prjs{
+        display: flex;
+        /* flex-direction: row */
+        width:50%;
+        height: 7%;
+        margin-left: 25%;
+        margin-right: 25%;
+        /* padding:0 3% 0 3%; */
+        height: 300px;
+        /* text-align: center;  */
+        justify-content:space-evenly;
+        align-items: center;
+        margin-bottom: 8%;
+        background: linear-gradient(transparent,rgb(16, 15, 18));
+        border-radius: 10px;
+        border: 0.2px solid rgb(195, 145, 241);
+        padding: 3%;
+    }
+    
+    .weblink a{
+        text-decoration: none;
+        /* padding: 25px; */
+        text-align: center;
+        color: rgb(195, 145, 241);;;
+    }
+    
+    .weblink{
+        height: 30px;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+    }
+    .prjs div p{
+        margin: 12px;
+    }
+    .prjs div h2{
+    
+        color: rgb(195, 145, 241);
+        margin-bottom: 20px;
+    }
+    
+    
+    /* project section completed */
+
+    footer{
+        background-image: linear-gradient(transparent,black);
+        width: 100%;
+        height: 100%;
+    }
+    .container-form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form h3{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .inp{
+        width: 100%;
+        height: 30px;
+        margin: 4% 10%;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 3px;
+    }
+    
+    .textareas{
+        width: 100%;
+        height:60px;
+        margin: 4% 10%;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    
+    .send{
+        color: white;
+        font-size: 23px;
+        font-weight: 500;
+        margin: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+    /* 340px to 650 px Screen width*/
+
+@media screen and (max-width: 650px) and (min-width: 320px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .left{
+        padding: 5px;
+        margin-left:18px;
+        /* margin-top: 20px; */
+        font-size: 3.25rem;
+        text-shadow: 2px 2px black;
+        font-weight: 700;
+        }
+    .right{
+        display: none;
+    }
+
+  /* Header code completed */
+
+
+
+
+
+    .leftsection{
+        width: 200%;
+        text-align: left;
+        padding-left: 29px;
+        /* margin-left: 5%; */
+    }
+    .detail{
+        font-size: 33px;
+    }
+
+    .rightsection{
+        display: none;
+        left: 0;
+    }
+
+
+    .firstsection{
+        display: flex;
+        height: 550px;
+        justify-content:space-around;
+        align-items: center;
+        margin-bottom: -5%;
+    }
+
+    .links::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: rgb(209, 177, 239);
+        margin: auto;
+        display: block;
+    }
+    .links:hover{
+        color: rgb(188, 139, 234);
+    }
+
+    .links:hover::after{
+        width: 100%;
+        transition: width 0.28s linear;
+    }
+
+    /* first section completed */
+
+
+    .secondsection h1{
+        margin: 20px 10px  20px 10px;
+        margin-left: 40px;
+    }
+    .box{
+        height: 300px;
+        width: 1px;
+        background-color: white;
+        margin: 30px 0px 50px 100px;
+    }
+    
+    .first{
+        display: flex;
+    }
+
+    .secondhr{
+        width: 185%;
+        overflow-x: hidden;
+    }
+
+    /* second section completed */
+    
+    .educationdetails{
+        margin: 20px;
+        margin-top: 20px;
+    }
+    .educationdetails ul li{
+        margin-top: 30px;
+    }
+    
+    .box1{
+        height: 600px;
+        width: 1px;
+        background-color: white;
+        margin: 30px 0px 50px 100px;
+    }
+    
+    .thirdsection h1{
+        margin: 20px 10px 20px 10px;
+        margin-left: 40px;
+    }
+    
+    /* third section completed */
+
+
+    
+    .fourthsection h1{
+        margin: 20px 10px 100px 10px;
+        margin-left: 40px;
+    }
+    .allprojects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .prjs{
+        display: flex;
+        /* flex-direction: row */
+        width:80%;
+        height: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding:0 3% 0 3%;
+        height: 300px;
+        /* text-align: center;  */
+        justify-content:space-evenly;
+        align-items: center;
+        margin-bottom: 8%;
+        background: linear-gradient(transparent,rgb(16, 15, 18));
+        border-radius: 10px;
+        border: 0.2px solid rgb(195, 145, 241);
+        padding: 3%;
+    }
+    
+    .weblink a{
+        text-decoration: none;
+        /* padding: 25px; */
+        text-align: center;
+        color: rgb(195, 145, 241);;;
+    }
+    
+    .weblink{
+        height: 30px;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+    }
+    .prjs div p{
+        margin: 12px;
+    }
+    .prjs div h2{
+    
+        color: rgb(195, 145, 241);
+        margin-bottom: 20px;
+    }
+    
+    
+    /* project section completed */
+
+
+
+    footer{
+        background-image: linear-gradient(transparent,black);
+        width: 100%;
+        height: 100%vh;
+    }
+    .container-form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form h3{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .inp{
+        width: 80%;
+        height: 30px;
+        margin: 4% 10%;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 3px;
+    }
+    
+    .textareas{
+        width: 80%;
+        height:60px;
+        margin: 4% 10%;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    
+    .send{
+        color: white;
+        font-size: 23px;
+        font-weight: 500;
+        margin: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .copy p{
+        font-size: 12px;
+    }
+
+
+}
